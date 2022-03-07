@@ -22,24 +22,15 @@ while True:
         print'Answer is: ', Answer
 
     elif user_input == 4:
-        user_input = input("Decimal calculation will not be done.\n1. No Problem.\n2. I need Decimal calculation.\n")
-        if user_input == 1:
-            x = int(input("Enter the value of X: "))
-            y = int(input("Enter the value of Y: "))
-            Answer1 = x // y
-            Answer2 = x % y
-            print'Quotient is: ', Answer1
-            print'Remainder is: ', Answer2
-        elif user_input == 2:
-            print("Sorry, I don't do that.")
-
+        x = float(input("Enter the value of X: "))
+        y = float(input("Enter the value of Y: "))
+        Answer1 = x / y
+        print'Quotient is: ', Answer1
+            
     elif user_input == 5:
         number = int(input("Enter the number: "))
-        n = int(input("Enter the power: "))
-        number1 = number
-        for i in range(1, n):
-            exponential = number*number1
-            number1 = exponential
+        n = float(input("Enter the power: "))
+        exponential = number**n
         print number, "power", n, "is", exponential
 
     elif user_input == 6:
